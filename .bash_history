@@ -60,3 +60,24 @@ sudo systemctl restart jenkins
 sudo systemctl status jenkins
 groups jenkins
 jenkins docker
+clear
+git init
+git add .
+git commit -m "Initial Employee Management application"
+git remote add origin https://github.com/Guruprasad29/Employee-Management.git
+git push -u origin main
+git remote add origin 'https://github.com/Guruprasad29/Employee-Management.git'
+git push -u origin main
+git branch
+git checkout -b develop
+git push -u origin develop
+repo
+sudo apt update
+git push -u origin develop
+git pull
+git pull -u origin develop
+git push -u origin develop
+git checkout develop
+git pull --rebase origin develop
+git push -u origin develop
+git status
