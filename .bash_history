@@ -81,3 +81,31 @@ git checkout develop
 git pull --rebase origin develop
 git push -u origin develop
 git status
+git checkout develop
+git pull origin develop
+git checkout -b feature/employee-api
+git add .
+git commit -m "Add employee API"
+git push -u origin feature/employee-api
+git checkout develop
+git pull origin develop
+git checkout -b feature/employee-service
+git add .
+git commit -m "Modify employee service"
+git push -u origin feature/employee-service
+git checkout develop
+git pull origin develop
+git checkout -b feature/db-config
+git add .
+git commit -m "Update database configuration"
+git push -u origin feature/db-config
+git checkout develop
+git pull origin develop
+git merge feature/employee-api
+git push origin develop
+git merge feature/employee-service
+git status
+git add EmployeeService.java
+git commit -m "Resolve merge conflict between employee API and service"
+git push origin develop
+ls
